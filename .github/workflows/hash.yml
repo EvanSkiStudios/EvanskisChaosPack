@@ -5,10 +5,12 @@ name: Hash
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # push:
+  #  branches: [ "main" ]
+  # pull_request:
+  #  branches: [ "main" ]
+  release:
+    types: [published]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,8 +30,8 @@ jobs:
       - uses: MCJack123/ghaction-generate-release-hashes@v3
         with:
           hash-type: sha1
-          file-name: Evanskis.Chaos.pack.zip
+          file-name: hashes.txt
       - uses: actions/upload-artifact@v2
         with:
           name: Asset Hashes
-          path: Evanskis.Chaos.pack.zip
+          path: hashes.txt
