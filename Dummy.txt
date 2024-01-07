@@ -1,0 +1,3 @@
+Dummy file so people can do pull requests
+
+If you want to suggest a change or improvement, clone the repo, make your chages and then do a pull request
