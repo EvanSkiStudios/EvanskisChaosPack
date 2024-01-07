@@ -1,4 +1,4 @@
-©2023 Evanski studios
+©2024 Evanski studios
 
 This is a resource pack for minecraft that me and my friends use with our plugins
 https://github.com/EvanSkiStudios/Raccoon-Mischief
